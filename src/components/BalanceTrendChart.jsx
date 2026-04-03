@@ -13,10 +13,6 @@ export const BalanceTrendChart = () => {
     ...monthlyData.map(d => Math.max(d.income, d.expense))
   );
 
-  const formatAmount = (amount) => {
-    return `$${Math.round(amount / 100)}`;
-  };
-
   return (
     <div className="chart-card">
       <h3 className="chart-title">Balance Trend (6 Months)</h3>
